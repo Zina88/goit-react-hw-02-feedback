@@ -22,12 +22,13 @@ class App extends Component {
   };
 
   countPositiveFeedbackPercentage = () => {
+    const { good } = this.state;
     const totalFeedback = this.countTotalFeedback();
-    const goodFeedback = this.state.good;
+
     let result = 0;
 
     if (totalFeedback > 0) {
-      result = Math.ceil((goodFeedback / totalFeedback) * 100);
+      result = Math.ceil((good / totalFeedback) * 100);
     }
     return `${result}%`;
   };
