@@ -5,7 +5,7 @@ import Notification from './Notification';
 import Section from './Section';
 import css from './App.module.css';
 
-class App extends Component {
+export default class App extends Component {
   state = {
     good: 0,
     neutral: 0,
@@ -65,4 +65,3 @@ class App extends Component {
   }
 }
 
-export default App;
